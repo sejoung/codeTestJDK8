@@ -7,14 +7,35 @@ class OldSingleton implements Serializable {
      * 
      */
     private static final long serialVersionUID = -4253142440722917903L;
+
+    private static int CNT = 0;
+
+
     // compile-time constant
-    final static String NAME = "OldSingleton";
+    final static String NAME = new String("OldSingleton");
     // run-time constant
     // final static String NAME = new String("OldSingleton");
-    final static OldSingleton INSTANCE = new OldSingleton();
+    private static OldSingleton INSTANCE = null;
 
-    private OldSingleton() {
-        System.out.println("hi");
+    static {
+        try {
+            INSTANCE = new OldSingleton();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
+    private OldSingleton() throws Exception {
+        if(CNT>0){
+            throw new AssertionError();
+        }
+        System.out.println("hi");
+
+        CNT++;
+    }
+    public static OldSingleton getInstance() {
+        return INSTANCE;
+    }
+
 
 }
