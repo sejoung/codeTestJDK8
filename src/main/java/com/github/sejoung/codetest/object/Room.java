@@ -16,7 +16,7 @@ public class Room implements AutoCloseable {
 
         // close 메서드나 cleaner가 호출한다.
         @Override public void run() {
-            System.out.println("Cleaning room");
+            System.out.println("Cleaning room "+ numJunkPiles);
             numJunkPiles = 0;
         }
     }
