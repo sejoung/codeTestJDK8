@@ -10,7 +10,7 @@ public class Test {
         Human zola = Human.createZola(); 
         System.out.println(zola.getName());
         
-        
+
     }
 
 }
