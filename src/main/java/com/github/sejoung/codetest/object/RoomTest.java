@@ -1,3 +1,4 @@
+/*
 package com.github.sejoung.codetest.object;
 
 public class RoomTest {
@@ -11,3 +12,4 @@ public class RoomTest {
         System.out.println("안되~");
     }
 }
+*/

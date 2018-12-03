@@ -1,6 +1,7 @@
 package com.github.sejoung.codetest.equals;
 
 import java.util.Set;
+/*
 
 public class CounterPointTest {
     // 단위 원 안의 모든 점을 포함하도록 unitCircle을 초기화한다. (58쪽)
@@ -22,4 +23,4 @@ public class CounterPointTest {
         // true를 출력해야 하지만, Point의 equals가 getClass를 사용해 작성되었다면 그렇지 않다.
         System.out.println(onUnitCircle(p2));
     }
-}
+}*/

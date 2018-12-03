@@ -1,4 +1,5 @@
 package com.github.sejoung.codetest.object;
+/*
 
 import java.lang.ref.Cleaner;
 
@@ -35,4 +36,4 @@ public class Room implements AutoCloseable {
     @Override public void close() {
         cleanable.clean();
     }
-}
+}*/
