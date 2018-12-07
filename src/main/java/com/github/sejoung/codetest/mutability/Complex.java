@@ -15,7 +15,7 @@ public final class Complex {
     }
 
     public double realPart() {
-   
+
         return realNumber;
     }
 
