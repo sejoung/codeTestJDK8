@@ -25,7 +25,6 @@ class LazySingleton implements Serializable {
         return LazySingletonHolder.INSTANCE;
     }
 
-
     Object readResolve() throws ObjectStreamException {
         return LazySingletonHolder.INSTANCE;
     }
