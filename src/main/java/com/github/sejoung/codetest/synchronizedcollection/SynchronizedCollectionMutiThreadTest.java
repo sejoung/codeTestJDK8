@@ -37,8 +37,8 @@ public class SynchronizedCollectionMutiThreadTest {
             executorService.submit(()->{
                 int idx = counter.addAndGet(1);
                 barrier.await();
+                log.debug("idx = {} removeIf={} size ={}",idx,sc.removeIf(predicate),sc.size());
 
-                log.debug("idx = {} removeIf={}",idx,sc.removeIf(predicate));
 
                 return null;
             });
