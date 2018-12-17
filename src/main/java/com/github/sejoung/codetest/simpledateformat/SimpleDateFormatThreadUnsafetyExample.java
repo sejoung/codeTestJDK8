@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;
@@ -20,8 +21,8 @@ public class SimpleDateFormatThreadUnsafetyExample {
 
     public static void main(String[] args) {
         String dateStr = "2018-06-22";
-        Date date = new Date();
-        int nThreads = 10;
+        LocalDate date = LocalDate.now();
+        int nThreads = 2;
         ExecutorService executorService = Executors.newFixedThreadPool(nThreads);
         CyclicBarrier barrier = new CyclicBarrier(nThreads);
 
