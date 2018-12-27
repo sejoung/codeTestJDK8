@@ -38,8 +38,8 @@ public class Generics {
 
 
         List<Integer> list = Arrays.asList(1,2,3,4,5);
-        printList(list);
-        printList2(list);
+      //  printList(list);
+        //printList2(list);
 
      //   new Hello<String>();// type argument
 
