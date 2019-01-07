@@ -12,7 +12,7 @@ public class Demo {
     public static void main(String[] args) {
         Demo demo = new Demo();
 
-        demo.test(1,2,3,4);
+       // demo.test(1,2,3,4);
 
 
     }
