@@ -50,10 +50,13 @@ public class Solution {
 
         Random random = ThreadLocalRandom.current();
 
-        int result = solution.solution(random.nextInt(2147483647));
+        for (int i = 0; i< 10000; i++){
 
-        System.out.println(result);
+            int input = random.nextInt(2147483647);
+            int result = solution.solution(input);
 
+            System.out.println("input = "+input+" result = "+result);
+        }
 
     }
 }
