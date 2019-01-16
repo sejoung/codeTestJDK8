@@ -45,17 +45,34 @@ public class Solution {
         return result;
     }
 
+    private int solution2(int N) {
+        final String GAP = "1";
+        String binaryString = Integer.toBinaryString(N);
+        int returnSolutionSize = 0;
+        String[] tempSizeChk = binaryString.split(GAP);
+        int lastChk = 0;
+        if (binaryString.lastIndexOf(GAP) != binaryString.length()-1) lastChk = 1;
+        if (binaryString.startsWith(GAP) && 1 >= tempSizeChk.length && lastChk == 0) return 0;
+        for (int i = 0; i < tempSizeChk.length-lastChk; i++) {
+            String temp = tempSizeChk[i];
+            if(temp.length() > returnSolutionSize) returnSolutionSize = temp.length();
+        }
+        return returnSolutionSize;
+
+    }
+
+
     public static void main(String[] args) {
         Solution solution = new Solution();
 
         Random random = ThreadLocalRandom.current();
 
-        for (int i = 0; i< 10000; i++){
+        for (int i = 0; i < 10000; i++) {
 
             int input = random.nextInt(2147483647);
-            int result = solution.solution(input);
+            int result = solution.solution2(32);
 
-            System.out.println("input = "+input+" result = "+result);
+            System.out.println("input = " + input + " result = " + result);
         }
 
     }
