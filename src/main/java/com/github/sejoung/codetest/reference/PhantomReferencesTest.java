@@ -6,6 +6,7 @@ import java.lang.ref.ReferenceQueue;
 
 public class PhantomReferencesTest {
     public static void main(String[] args) throws InterruptedException {
+
         D d = new D();
         d.say();
         ReferenceQueue<D> refQueue = new ReferenceQueue<D>();
