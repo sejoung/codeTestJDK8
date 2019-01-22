@@ -1,5 +1,7 @@
 package com.github.sejoung.codetest.constant;
 
+import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
+
 import java.util.Optional;
 
 public class Run {
