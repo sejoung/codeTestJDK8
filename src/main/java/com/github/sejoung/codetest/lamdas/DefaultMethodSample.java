@@ -8,6 +8,11 @@ public class DefaultMethodSample implements
         System.out.println("Some method implementation in the class");
     }
 
+    @Override
+    public void someOtherMethod() {
+
+    }
+
     public static void main(String[] args) {
         DefaultMethodSample def1 = new DefaultMethodSample();
         def1.someMethod();
