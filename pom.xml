@@ -11,21 +11,21 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     <description>codetest</description>
 
     <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.0.5.RELEASE</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.5.RELEASE</version>
     </parent>
 
     <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <java.version>11</java.version>
-    <!--
-    <java.version>11</java.version>
-    -->
-    <springfox-version>2.7.0</springfox-version>
-    <swagger-core-version>1.5.16</swagger-core-version>
-    </properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>11</java.version>
+        <!--
+        <java.version>11</java.version>
+        -->
+        <springfox-version>2.7.0</springfox-version>
+        <swagger-core-version>1.5.16</swagger-core-version>
+        </properties>
 
     <dependencies>
 
