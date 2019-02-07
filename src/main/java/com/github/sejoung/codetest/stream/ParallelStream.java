@@ -2,10 +2,10 @@ package com.github.sejoung.codetest.stream;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.ForkJoinPool;
 
 public class ParallelStream {
     public static void main(String[] args) {
+
     /*
         ForkJoinPool commonPool = ForkJoinPool.commonPool();
         System.out.println(commonPool.getParallelism());    // 3
@@ -54,6 +54,7 @@ public class ParallelStream {
                 new Person("Peter", 23),
                 new Person("Pamela", 23),
                 new Person("David", 12));
+
 
         persons
                 .parallelStream()
