@@ -2,12 +2,10 @@ package com.github.sejoung.codetest.stream;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Stream;
 
+import static com.github.sejoung.codetest.stream.Adapters.iterableOf;
 import static java.util.stream.Collectors.toList;
 
 
@@ -15,16 +13,28 @@ import static java.util.stream.Collectors.toList;
 public class Freq {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("src/main/resources/words.txt");
+/*
 
         Map<String, Long> freq = new HashMap<>();
         // 반복적인 코드
-
         try (Stream<String> words = new Scanner(file).tokens()) {
             List<String> wordsList = words.collect(toList());
             for(String word : wordsList){
                 freq.merge(word.toLowerCase(), 1L, Long::sum);
             }
         }
+        System.out.println(freq);
+*/
+
+
+        Map<String, Long> freq = new HashMap<>();
+        // 반복적인 코드
+        try (Stream<String> words = new Scanner(file).tokens()) {
+            for(String word : iterableOf(words)){
+                freq.merge(word.toLowerCase(), 1L, Long::sum);
+            }
+        }
+        System.out.println(freq);
 
         // 코드 46-1 스트림 패러다임을 이해하지 못한 채 API만 사용했다 - 따라 하지 말 것! (277쪽)
      /*   Map<String, Long> freq = new HashMap<>();
