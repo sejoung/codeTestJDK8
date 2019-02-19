@@ -10,7 +10,7 @@ public class Lamda {
 
         ExecutorService es = Executors.newCachedThreadPool();
 
-        es.submit(System.out::println);
-        String
+       // es.submit(System.out::println);
+
     }
 }
