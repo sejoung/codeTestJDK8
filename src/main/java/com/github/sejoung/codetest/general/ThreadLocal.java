@@ -7,11 +7,21 @@ public class ThreadLocal {
     }
 
     // 현 스레드의 값을 키로 구분해 저장
-    public static void set(String key, Object value) {
+    public static void set(Key key, Object value) {
     }
 
     //키가 가르키는 현 스레드의 값을 반환한다.
-    public static Object get(String key) {
+    public static Object get(Key key) {
         return null;
+    }
+
+    //권한
+    public static class Key{
+        Key(){}
+    }
+
+    // 위조 불가능한 고유키를 생성
+    public static Key getKey(){
+        return new Key();
     }
 }
