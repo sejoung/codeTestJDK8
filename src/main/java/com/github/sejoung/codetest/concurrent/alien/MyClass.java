@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 
 public class MyClass {
 
-  static Object o1 = new Object();
+  private final Object o1 = new Object();
 
   public static void main(String[] args) throws InterruptedException {
     MyClass mc = new MyClass();
