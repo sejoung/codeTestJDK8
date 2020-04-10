@@ -1,5 +1,6 @@
 package com.github.sejoung.codingtest;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -34,6 +35,21 @@ public class Array {
 		}
 
 		return true;
+	}
+
+
+	public static String sort(String s) {
+		char[] content = s.toCharArray();
+		Arrays.sort(content);
+		return new String(content);
+	}
+
+	public static boolean prermutation(String s, String s1) {
+		if (s.length() != s1.length()) {
+			return false;
+		}
+		return sort(s).equals(sort(s1));
+
 	}
 
 
