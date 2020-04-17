@@ -1,4 +1,4 @@
-package com.github.sejoung.codingtest;
+package com.github.sejoung.codingtest.overlap;
 
 import java.util.Arrays;
 import java.util.HashMap;
